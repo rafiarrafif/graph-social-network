@@ -41,6 +41,9 @@ def main():
         case 6:
             import features.shortest_path as shortest_path
             shortest_path.show_shortest_path(graph)
+        case 7:
+            import features.mutual_connection as mutual_connection
+            mutual_connection.show_mutual_connection(graph)
         case _:
             print("Menu tidak ditemukan. Silahkan coba lagi.")
 
