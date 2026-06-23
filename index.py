@@ -19,6 +19,7 @@ def main():
     print("3. Menampilkan out degree (following)")
     print("4. Menampilkan top influencer")
     print("5. Menampilkan top user aktif")
+    print("6. Menampilkan shortest path")
     user_input = int(input("Pilih menu: "))
 
     match user_input:
@@ -37,6 +38,9 @@ def main():
         case 5:
             import features.most_active_user as most_active_user
             most_active_user.show_most_active_user(graph)
+        case 6:
+            import features.shortest_path as shortest_path
+            shortest_path.show_shortest_path(graph)
         case _:
             print("Menu tidak ditemukan. Silahkan coba lagi.")
 
