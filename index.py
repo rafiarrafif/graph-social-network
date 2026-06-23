@@ -17,6 +17,7 @@ def main():
     print("1. Menampilkan informasi graph")
     print("2. Menampilkan in degree (followers)")
     print("3. Menampilkan out degree (following)")
+    print("4. Menampilkan top influencer")
     user_input = int(input("Pilih menu: "))
 
     match user_input:
@@ -29,8 +30,11 @@ def main():
         case 3:
             import features.out_degree as out_degree
             out_degree.show_out_degree(graph)
+        case 4:
+            import features.top_influencer as top_influencer
+            top_influencer.show_top_influencer(graph)
         case _:
-            print("Menu tidak ditemukan. Silahkan coba lagi.")  
+            print("Menu tidak ditemukan. Silahkan coba lagi.")
 
 if __name__ == "__main__":
     main()
