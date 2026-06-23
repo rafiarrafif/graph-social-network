@@ -16,6 +16,7 @@ def main():
     print("silahkan pilih menu yang tersedia:")
     print("1. Menampilkan informasi graph")
     print("2. Menampilkan in degree (followers)")
+    print("3. Menampilkan out degree (following)")
     user_input = int(input("Pilih menu: "))
 
     match user_input:
@@ -25,6 +26,11 @@ def main():
         case 2:
             import features.in_degree as in_degree
             in_degree.show_in_degree(graph)
+        case 3:
+            import features.out_degree as out_degree
+            out_degree.show_out_degree(graph)
+        case _:
+            print("Menu tidak ditemukan. Silahkan coba lagi.")  
 
 if __name__ == "__main__":
     main()
