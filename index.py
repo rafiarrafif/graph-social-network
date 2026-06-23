@@ -20,6 +20,7 @@ def main():
     print("4. Menampilkan top influencer")
     print("5. Menampilkan top user aktif")
     print("6. Menampilkan shortest path")
+    print("7. Menampilkan mutual connection")
     user_input = int(input("Pilih menu: "))
 
     match user_input:
