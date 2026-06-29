@@ -21,6 +21,7 @@ def main():
     print("5. Menampilkan top user aktif")
     print("6. Menampilkan shortest path")
     print("7. Menampilkan mutual connection")
+    print("8. Menampilkan visualisasi graph")
     user_input = int(input("Pilih menu: "))
 
     match user_input:
@@ -45,6 +46,9 @@ def main():
         case 7:
             import features.mutual_connection as mutual_connection
             mutual_connection.show_mutual_connection(graph)
+        case 8:
+            import features.visualization as visualization
+            visualization.show_visualization(graph)
         case _:
             print("Menu tidak ditemukan. Silahkan coba lagi.")
 

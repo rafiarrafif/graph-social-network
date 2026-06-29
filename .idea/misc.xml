@@ -3,4 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.10 (ProjectAkhir)" />
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_26" project-jdk-name="Python 3.10 (ProjectAkhir)" project-jdk-type="Python SDK" />
 </project>

@@ -1,5 +1,5 @@
 import networkx as nx
-
+import helpers.bfs as bfs
 
 def show_shortest_path(graph: nx.DiGraph) -> None:
     print("\n")
@@ -17,11 +17,7 @@ def show_shortest_path(graph: nx.DiGraph) -> None:
 
     undirected_graph = graph.to_undirected()
     try:
-        path = nx.shortest_path(
-            undirected_graph,
-            source=user_a,
-            target=user_b
-        )
+        path = bfs.sortest_path(undirected_graph, user_a, user_b)
 
         print("\nShortest Path:")
         print(" -> ".join(path))
